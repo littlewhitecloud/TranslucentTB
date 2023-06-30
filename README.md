@@ -1,5 +1,6 @@
 ### TranslucentTB
 #### This is a python version TranslucentTB maybe with tkinter and ctypes
+> Add gui later
 ### Clear
 ![image](https://github.com/littlewhitecloud/TranslucentTB/assets/71159641/97763cac-2b58-4208-b98b-36d031c86880)
 ### Noeffect
