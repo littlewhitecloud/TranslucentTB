@@ -1,5 +1,15 @@
-from ctypes import (POINTER, Structure, byref, c_int, c_size_t, c_uint, cast,
-                    pointer, sizeof, windll)
+from ctypes import (
+    POINTER,
+    Structure,
+    byref,
+    c_int,
+    c_size_t,
+    c_uint,
+    cast,
+    pointer,
+    sizeof,
+    windll,
+)
 from ctypes.wintypes import BOOL, DWORD, HRGN, HWND
 
 
@@ -52,7 +62,8 @@ def HEXtoRGBAint(HEX: str):
     return int(gradientColor, base=16)
 
 
-def blur(hwnd, blurtype: str = "acrylic", hexColor: bool = False):
+def blur(blurtype: str = "acrylic", hexColor: bool = False):
+    hwnd = windll.user32.FindWindowW("Shell_TrayWnd", None)
     accent = ACCENTPOLICY()
     accent.AccentState = 3
 

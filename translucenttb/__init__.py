@@ -1,1 +1,1 @@
-from .main import Settings, blur  # noqa: F401
+from .main import blur  # noqa: F401
