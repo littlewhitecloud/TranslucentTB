@@ -9,4 +9,11 @@
 ### Acrylic
 ![image](https://github.com/littlewhitecloud/TranslucentTB/assets/71159641/211f4147-ce5d-4f04-9126-e274369abdfd)
 
+### Usage
+```python
+from translucenttb import blur # import the blur function
+blur(blurtype="Acrylic") # for example acrylic
+# choose one type from ("clear", "noeffect", "blur", "acrylic")
+```
+
 #### Still working in progress
