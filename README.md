@@ -13,7 +13,7 @@
 ### Usage
 ```python
 from translucenttb import blur # import the blur function
-blur(blurtype="Acrylic") # for example acrylic
+blur(blurtype="acrylic") # for example acrylic
 # choose one type from ("clear", "noeffect", "blur", "acrylic")
 ```
 
