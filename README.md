@@ -17,4 +17,10 @@ blur(blurtype="acrylic") # for example acrylic
 # choose one type from ("clear", "noeffect", "blur", "acrylic")
 ```
 
-#### Still working in progress
+### UI
+![image](https://github.com/littlewhitecloud/TranslucentTB/assets/71159641/0a9ecdd5-f5ae-4fa9-b124-09a1e9ed849a)
+```python
+from translucenttb import Settings
+example = Settings()
+example.mainloop()
+```
