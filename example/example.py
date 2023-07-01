@@ -1,4 +1,4 @@
-from translucenttb import blur  # import the blur function
+from translucenttb import Settings  # import the blur function
 
 # blur(blurtype, hexColor)
 # blurtype:
@@ -8,4 +8,4 @@ from translucenttb import blur  # import the blur function
 #     acrylic
 
 # for example
-blur(blurtype="acrylic")
+Settings().mainloop()
