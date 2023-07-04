@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as file:
 
 setup(
     name="translucenttb",
-    version="0.0.3",
+    version="0.0.4",
     description="A python version TranslucentTB",
     long_description=long_description,
     long_description_content_type="text/markdown",
