@@ -62,17 +62,18 @@ def HEXtoRGBAint(HEX: str):
     return int(gradientColor, base=16)
 
 
-def blur(blurtype: str = "acrylic", hexColor: str = ""):
-    hwnd = windll.user32.FindWindowW("Shell_TrayWnd", None)
+def blur(blurtype: str = "acrylic", hexColor: str = "", spechwnd: int = None):
+    hwnd = spechwnd if spechwnd else windll.user32.FindWindowW("Shell_TrayWnd", None)
+
     accent = ACCENTPOLICY()
     accent.AccentState = 3
-
     gradientColor = 0
-
-    accent.AccentFlags = 2
-    gradientColor = (
-        HEXtoRGBAint("#0000000000") if not hexColor else HEXtoRGBAint(hexColor)
-    )
+	
+    if hexColor:
+        accent.AccentFlags = 2
+        gradientColor = (
+            HEXtoRGBAint(hexColor)
+        )
 
     if blurtype == "clear":
         accent.AccentState = 2
@@ -86,7 +87,7 @@ def blur(blurtype: str = "acrylic", hexColor: str = ""):
         bb.hRgnBlur = 1
         windll.dwmapi.DwmEnableBlurBehindWindow(hwnd, byref(bb))
     elif blurtype == "acrylic":
-        accent.AccentState = 3
+        accent.AccentState = 4
     accent.GradientColor = gradientColor
 
     data = WINDOWCOMPOSITIONATTRIBDATA()
