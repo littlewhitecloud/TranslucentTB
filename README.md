@@ -12,12 +12,13 @@ A lightweight utility that makes the Windows taskbar translucent/transparent on 
 ### Usage
 ```python
 from translucenttb import blur # import the blur function
-blur(blurtype="acrylic") # for example acrylic
-# choose one type from ("clear", "noeffect", "blur", "acrylic")
+blur(blurtype="Acrylic") # for example: We use Acrylic
+# choose one type from ("Clear", "Opaque", "Aero", "Acrylic")
 ```
 
 ### UI
-![image](https://github.com/littlewhitecloud/TranslucentTB/assets/71159641/0a9ecdd5-f5ae-4fa9-b124-09a1e9ed849a)
+![image](https://github.com/littlewhitecloud/TranslucentTB/assets/71159641/8512026e-faf7-4a3f-b7f9-894cd3fdce9c)
+
 ```python
 from translucenttb import Settings
 example = Settings()
