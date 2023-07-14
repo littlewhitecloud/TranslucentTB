@@ -40,7 +40,7 @@ class Settings(Tk):
             text="Choose a effect you'd like to apply to the taskbar:",
         )
         effectchooser = Combobox(
-            chooseframe, value=("clear", "noeffect", "blur", "acrylic")
+            chooseframe, value=("Clear", "Opaque", "Aero", "Acrylic")
         )
 
         colorframe = Frame(selectframe)
